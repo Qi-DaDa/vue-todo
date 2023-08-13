@@ -38,7 +38,7 @@ export default {
       <span>{{ number }}</span>
     </template>
   </CustomTitle>
-  <CustomInput style="margin:20px" @submit="onAdd" defaultKeyword="组合式API-function" />
+  <CustomInput style="margin:20px" @submit="onAdd" defaultKeyword="组合式API-function(原始写法)" />
   <CustomList :tableList="tableList" @delete="onDelete" />
   <CustomMessage :open="isOpen" @close="isOpen = false" title="最多可添加6条" />
 </template>

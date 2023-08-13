@@ -53,7 +53,7 @@ onDeactivated((e: any) => {
       </div>
     </template>
   </CoustomTitle>
-  <CoustomInput style="margin:20px" placeholder="请输入添加内容~" defaultKeyword="组合式API-attribute" @submit="onAdd" />
+  <CoustomInput style="margin:20px" placeholder="请输入添加内容~" defaultKeyword="组合式API-attribute(语法糖)" @submit="onAdd" />
   <CustomList :tableList="tableList" @delete="onDelete" />
   <CustomMessage :open="isOpen" title="最多可添加6条" @close="isOpen = false" />
 </template>
