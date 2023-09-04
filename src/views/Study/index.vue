@@ -47,7 +47,7 @@ provide('count', count)
 </script>
 <template>
   <div class="container">
-    <button @click="handleCount">按钮{{ count }} pinia=》{{ store.count }}</button>
+    <el-button type="primary" @click="handleCount">按钮{{ count }} pinia=》{{ store.count }}</el-button>
     <button>计算属性computer{{ countComputed }}==>{{ doubleCount }}</button>
     <button>watch监听{{ count }}</button>
     <div style="border: 1px solid red;" ref="domRef">

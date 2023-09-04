@@ -11,9 +11,7 @@ withDefaults(defineProps<Props>(), {
 <script lang="ts">
 import { defineComponent } from 'vue'
 export default defineComponent({
-  props: {
-    message: String
-  },
+  props: ['title'],
   setup(props) {
     console.log(props);
   }
@@ -21,7 +19,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="custom_title">{{ message }}</div>
+  <div class="custom_title">{{ title }}</div>
 </template>
 <style scoped>
 .custom_title {

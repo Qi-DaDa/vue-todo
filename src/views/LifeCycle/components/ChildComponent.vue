@@ -3,7 +3,10 @@ export default {
   props: ['nums'],
   data() { return { num: 0 } },
   beforeCreate() {
-    console.log('beforeCreate=>', '在组件实例初始化完成之后立即调用。');
+    console.log('beforeCreate=>', '在组件实例初始化完成之前立即调用。');
+  },
+  created() {
+    console.log('created=>', '在组件实例初始化完成之后立即调用。');
   },
   beforeMount() {
     console.log('beforeMount', '在组件被挂载之前调用。');

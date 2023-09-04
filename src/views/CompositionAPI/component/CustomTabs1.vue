@@ -1,6 +1,6 @@
 <!-- tabs切换 -->
 <script setup lang="ts">
-import { defineProps } from "vue";
+// import { defineProps } from "vue";
 type List = {
   id: number,
   title: string
