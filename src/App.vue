@@ -1,9 +1,13 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+import LayoutContainer from "@/layout/LayoutContainer/index.vue";
 </script>
 
 <template>
-  <div class="root">
+  <el-config-provider namespace="dd">
+    <LayoutContainer />
+  </el-config-provider>
+  <!-- <div class="root">
     <aside>
       <nav>
         <RouterLink to="/option">选项式API</RouterLink>
@@ -19,7 +23,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterView />
       </div>
     </main>
-  </div>
+  </div> -->
 </template>
 
 <style scoped>
@@ -64,3 +68,4 @@ main>div {
   border-radius: 5px;
 }
 </style>
+@/layout/LayoutAside

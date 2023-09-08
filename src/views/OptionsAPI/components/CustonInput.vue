@@ -1,5 +1,4 @@
 <script  lang="ts">
-import { ref, defineProps, onMounted } from "vue";
 export default {
   props: {
     placeholder: {

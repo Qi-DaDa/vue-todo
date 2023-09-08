@@ -1,6 +1,5 @@
 <!-- 标题 -->
 <script setup lang="ts">
-import { defineProps } from "vue";
 const props = defineProps({
   title: {
     type: String,
@@ -17,7 +16,7 @@ const props = defineProps({
     <div>
       <slot name="titleRight" :number="6"></slot>
     </div>
-</div>
+  </div>
 </template>
 <style scoped>
 .custom_title {
