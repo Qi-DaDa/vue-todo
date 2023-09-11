@@ -64,7 +64,22 @@ const onCollapseSwitch = (e) => {
       </el-sub-menu>
       <el-menu-item index="2">
         <template #title>
-          <RouterLink to="/composition">组合式API</RouterLink>
+          <RouterLink to="/customPlugin">自定义插件展示</RouterLink>
+        </template>
+      </el-menu-item>
+      <el-menu-item index="3">
+        <template #title>
+          <RouterLink to="/slot">插槽</RouterLink>
+        </template>
+      </el-menu-item>
+      <el-menu-item index="4">
+        <template #title>
+          <RouterLink to="/other">其他</RouterLink>
+        </template>
+      </el-menu-item>
+      <el-menu-item index="5">
+        <template #title>
+          <RouterLink to="/demo">demo</RouterLink>
         </template>
       </el-menu-item>
     </el-menu>

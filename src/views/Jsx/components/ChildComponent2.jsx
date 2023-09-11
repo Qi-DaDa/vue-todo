@@ -48,7 +48,6 @@ const ChildComponent = {
   },
   render() {
     const { num, count, onChangeP, $scopedSlots } = this;
-    console.log($scopedSlots);
     return (
       <div>
         子组件

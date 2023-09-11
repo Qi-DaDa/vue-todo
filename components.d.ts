@@ -9,8 +9,13 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    copy: typeof import('./src/components/CustomLoading copy/index.vue')['default']
+    CustomButton: typeof import('./src/components/CustomButton/index.vue')['default']
+    CustomErroe: typeof import('./src/components/CustomErroe/index.vue')['default']
+    CustomError: typeof import('./src/components/CustomError/index.vue')['default']
     CustomInput: typeof import('./src/components/CustomInput.vue')['default']
     CustomList: typeof import('./src/components/CustomList.vue')['default']
+    CustomLoading: typeof import('./src/components/CustomLoading/index.vue')['default']
     CustomTilte: typeof import('./src/components/CustomTilte.vue')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
     ElButton: typeof import('element-plus/es')['ElButton']
